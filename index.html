@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Taste Tales by Reshma - homemade festive sweets and snacks. Order ladoo, karanji, chivda and more with delivery across India.">
+<title>Taste Tales by Reshma – Festive Sweets & Snacks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="sp" aria-hidden="true"><i style="left:8%;top:30%">✦</i><i style="left:88%;top:26%;animation-delay:.6s">✦</i><i style="left:18%;top:72%;animation-delay:1.2s">✧</i><i style="left:80%;top:76%;animation-delay:1.8s">✧</i><i style="left:50%;top:6%;animation-delay:2.4s">✦</i></div>
+  <div class="diya" aria-hidden="true">🪔</div>
+  <h1 class="t1">Taste Tales</h1>
+  <div class="by"><i></i><span>by <b>Reshma</b></span><i></i></div>
+  <p class="tag">Festive sweets &amp; snacks, made fresh at home and delivered to you.</p>
+  <div class="chips"><span>Fresh ingredients</span><span>Homemade with love</span><span>Hygienic preparation</span></div>
+  <a class="cta" href="#sweets">Order your festive box</a>
+</header>
+<main>
+  <p class="how">Tap <b>+</b> to add items in 0.5 kg steps, then check out with your delivery details. Your order arrives on Reshma's WhatsApp ready to confirm.</p>
+  <h2>Sweets</h2><p class="sub">Prices per kg</p>
+  <div id="sweets"></div>
+  <h2>Snacks</h2><p class="sub">Prices per kg</p>
+  <div id="snacks"></div>
+  <h2>From our kitchen</h2><p class="sub">A taste of the festive spread</p>
+  <div class="gal"><figure><img src="images/sweet-1.jpg" alt="Ladoo" loading="lazy"><figcaption>Ladoo</figcaption></figure><figure><img src="images/sweet-2.jpg" alt="Ladoo" loading="lazy"><figcaption>Ladoo</figcaption></figure><figure><img src="images/sweet-3.jpg" alt="Ladoo" loading="lazy"><figcaption>Ladoo</figcaption></figure><figure><img src="images/sweet-4.jpg" alt="Karanji" loading="lazy"><figcaption>Karanji</figcaption></figure><figure><img src="images/sweet-5.jpg" alt="Mithai" loading="lazy"><figcaption>Mithai</figcaption></figure><figure><img src="images/sweet-6.jpg" alt="Mithai" loading="lazy"><figcaption>Mithai</figcaption></figure><figure><img src="images/sweet-7.jpg" alt="Mithai" loading="lazy"><figcaption>Mithai</figcaption></figure><figure><img src="images/sweet-8.jpg" alt="Festive treats" loading="lazy"><figcaption>Festive treats</figcaption></figure></div>
+  <p class="note">Sample photos. Real photos of Reshma's own items can replace these.</p>
+  <h2>Loved by our customers</h2><p class="sub">Reviews in Marathi, Hindi &amp; English</p>
+  <div class="rev" id="rev"></div>
+  <p class="note">The reviews above are sample text, marked as such. Replace them with real customer reviews.</p>
+  <p style="text-align:center"><a class="wr" id="wr" href="#" target="_blank" rel="noopener">Share your review on WhatsApp</a></p>
+  <div class="trust">
+    <div><span>🌿</span>Fresh ingredients</div><div><span>🏠</span>Homemade with love</div>
+    <div><span>🏅</span>Quality ingredients</div><div><span>✨</span>Hygienic preparation</div>
+  </div>
+  <section class="ship">
+    <h4>Delivery available</h4>
+    <p>Mumbai · Maharashtra · All India · Selected international destinations</p>
+    <p>Delivery charges applicable</p>
+  </section>
+</main>
+<div class="bar">
+  <div class="tot"><span id="cnt">No items yet</span><b id="sum">₹0</b></div>
+  <button class="go" id="go" type="button">Browse menu</button>
+  <a class="call" href="tel:+918369412425">Call</a>
+</div>
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dh"><h3 id="dt">Delivery details</h3><button type="button" id="cx" aria-label="Close">×</button></div>
+  <form id="of">
+    <div class="sum" id="sum2"></div>
+    <div class="fg">
+      <label>Full name *<input name="name" required autocomplete="name"></label>
+      <label>Mobile number *<input name="mob" required type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit number" autocomplete="tel-national"></label>
+      <label class="w">Flat / House no. &amp; building *<input name="a1" required autocomplete="address-line1"></label>
+      <label class="w">Street / Area / Locality *<input name="a2" required autocomplete="address-line2"></label>
+      <label>City *<input name="city" required autocomplete="address-level2"></label>
+      <label>Pincode *<input name="pin" required inputmode="numeric" pattern="[1-9][0-9]{5}" maxlength="6" placeholder="6 digits" autocomplete="postal-code"></label>
+      <label>State *<input name="state" required value="Maharashtra" autocomplete="address-level1"></label>
+      <label>Landmark<input name="lm" placeholder="Optional"></label>
+      <label class="w">Needed by (date)<input name="dt" type="date" id="dd"></label>
+      <label class="w">Notes / gift message<textarea name="nt" rows="2" placeholder="Optional: less sugar, gift packing, etc."></textarea></label>
+    </div>
+    <button class="sub2" type="submit">Send order on WhatsApp</button>
+    <a id="wl" class="wr" href="#" target="_blank" rel="noopener" style="display:none;text-align:center;margin-top:12px">WhatsApp didn't open? Tap here to send your order</a>
+    <p class="hint">WhatsApp opens with your order ready. Just tap Send to confirm. Delivery charges are extra.</p>
+  </form>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
